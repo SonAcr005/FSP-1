@@ -1,0 +1,9 @@
+data = [12, 25, 40, 55, 70]
+x_min = min(data)
+x_max = max(data)
+normalized_data = []
+for x in data:
+    x_norm = (x - x_min) / (x_max - x_min)
+    normalized_data.append(x_norm)
+print("Original Data:", data)
+print("Normalized Data:", normalized_data)
