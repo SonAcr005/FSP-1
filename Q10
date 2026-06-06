@@ -1,0 +1,10 @@
+import pandas as pd
+
+df = pd.DataFrame({
+    'Numbers': ['10', '20', '30', '40', '50']
+})
+
+df['Numbers'] = df['Numbers'].astype(int)
+
+print(df)
+print(df.dtypes)
