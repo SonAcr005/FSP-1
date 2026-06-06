@@ -1,0 +1,6 @@
+from sklearn.preprocessing import LabelEncoder
+data = ["Red", "Blue", "Green", "Blue"]
+le = LabelEncoder()
+encoded_data = le.fit_transform(data)
+print("Original Data:", data)
+print("Encoded Data:", encoded_data)
