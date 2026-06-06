@@ -1,0 +1,9 @@
+import pandas as pd
+df = pd.DataFrame({
+    'City': ['Kolkata', 'Delhi', 'Mumbai', 'Chennai']
+})
+one_hot = pd.get_dummies(df, columns=['City'])
+print("Original Data:")
+print(df)
+print("\nOne-Hot Encoded Data:")
+print(one_hot)
